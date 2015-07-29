@@ -9,14 +9,43 @@
 #import "WMMainTableViewController.h"
 
 @interface WMMainTableViewController ()
+@property (nonatomic, strong) NSArray *styles;
 
 @end
 
 @implementation WMMainTableViewController
 
+- (NSArray *)styles{
+    if (_styles == nil) {
+        _styles = @[@"WMMenuViewStyleDefault",
+                    @"WMMenuViewStyleLine",
+                    @"WMMenuViewStyleFlood",
+                    @"WMMenuViewStyleFloodHollow"];
+    }
+    return _styles;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+}
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 1;
+}
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return self.styles.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    static NSString *const cellIdentifier = @"WMMainCell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
+                                      reuseIdentifier:cellIdentifier];
+    }
+    cell.textLabel.text = self.styles[indexPath.row];
+    return cell;
 }
 
 - (void)didReceiveMemoryWarning {

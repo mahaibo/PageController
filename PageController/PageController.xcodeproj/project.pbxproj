@@ -15,6 +15,8 @@
 		472DC63C1B6929290052795C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 472DC63A1B6929290052795C /* LaunchScreen.xib */; };
 		472DC6481B69292A0052795C /* PageControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 472DC6471B69292A0052795C /* PageControllerTests.m */; };
 		472DC6531B692A510052795C /* WMMainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 472DC6521B692A510052795C /* WMMainTableViewController.m */; };
+		472DC6571B692FDB0052795C /* PageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 472DC6561B692FDB0052795C /* PageController.m */; };
+		472DC65B1B6932EC0052795C /* MenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 472DC65A1B6932EC0052795C /* MenuView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +45,10 @@
 		472DC6471B69292A0052795C /* PageControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PageControllerTests.m; sourceTree = "<group>"; };
 		472DC6511B692A510052795C /* WMMainTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMMainTableViewController.h; sourceTree = "<group>"; };
 		472DC6521B692A510052795C /* WMMainTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMMainTableViewController.m; sourceTree = "<group>"; };
+		472DC6551B692FDB0052795C /* PageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageController.h; sourceTree = "<group>"; };
+		472DC6561B692FDB0052795C /* PageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageController.m; sourceTree = "<group>"; };
+		472DC6591B6932EC0052795C /* MenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuView.h; sourceTree = "<group>"; };
+		472DC65A1B6932EC0052795C /* MenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +90,7 @@
 		472DC62A1B6929290052795C /* PageController */ = {
 			isa = PBXGroup;
 			children = (
+				472DC6541B692FA90052795C /* PageController */,
 				472DC62F1B6929290052795C /* AppDelegate.h */,
 				472DC6301B6929290052795C /* AppDelegate.m */,
 				472DC6321B6929290052795C /* ViewController.h */,
@@ -122,6 +129,25 @@
 				472DC6461B69292A0052795C /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		472DC6541B692FA90052795C /* PageController */ = {
+			isa = PBXGroup;
+			children = (
+				472DC6581B6932C60052795C /* MenuView */,
+				472DC6551B692FDB0052795C /* PageController.h */,
+				472DC6561B692FDB0052795C /* PageController.m */,
+			);
+			name = PageController;
+			sourceTree = "<group>";
+		};
+		472DC6581B6932C60052795C /* MenuView */ = {
+			isa = PBXGroup;
+			children = (
+				472DC6591B6932EC0052795C /* MenuView.h */,
+				472DC65A1B6932EC0052795C /* MenuView.m */,
+			);
+			name = MenuView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,10 +250,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				472DC6571B692FDB0052795C /* PageController.m in Sources */,
 				472DC6341B6929290052795C /* ViewController.m in Sources */,
 				472DC6311B6929290052795C /* AppDelegate.m in Sources */,
 				472DC6531B692A510052795C /* WMMainTableViewController.m in Sources */,
 				472DC62E1B6929290052795C /* main.m in Sources */,
+				472DC65B1B6932EC0052795C /* MenuView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
