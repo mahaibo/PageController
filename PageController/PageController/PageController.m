@@ -55,7 +55,13 @@
 }
 
 - (instancetype)initWithViewControllerClasses:(NSArray *)classes andTheirTitles:(NSArray *)titles{
-    return nil;
+    if (self = [super init]) {
+        self.viewControllerClasses = [NSArray arrayWithArray:classes];
+        self.titles = titles;
+        
+//        [self setup];
+    }
+    return self;
 }
 
 // 当子控制器init完成时发送通知
