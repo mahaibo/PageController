@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>8E8788DF-B805-4B4F-ABB6-7BDA43D570DE</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>PageController</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>0309A011EEA2CDDFCD3E14C48B39F0778410145B</key>
 		<string>https://github.com/mahaibo/PageController.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>PageController/PageController.xcodeproj/project.xcworkspace</string>
+	<string>PageController/PageController.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>0309A011EEA2CDDFCD3E14C48B39F0778410145B</key>

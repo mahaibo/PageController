@@ -17,6 +17,7 @@
 		472DC6531B692A510052795C /* WMMainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 472DC6521B692A510052795C /* WMMainTableViewController.m */; };
 		472DC6571B692FDB0052795C /* PageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 472DC6561B692FDB0052795C /* PageController.m */; };
 		472DC65B1B6932EC0052795C /* MenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 472DC65A1B6932EC0052795C /* MenuView.m */; };
+		472DC6601B6A7ACF0052795C /* MyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 472DC65F1B6A7ACF0052795C /* MyTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,9 @@
 		472DC6561B692FDB0052795C /* PageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageController.m; sourceTree = "<group>"; };
 		472DC6591B6932EC0052795C /* MenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuView.h; sourceTree = "<group>"; };
 		472DC65A1B6932EC0052795C /* MenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuView.m; sourceTree = "<group>"; };
+		472DC65C1B6A76060052795C /* PageConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PageConst.h; sourceTree = "<group>"; };
+		472DC65E1B6A7ACF0052795C /* MyTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTableViewController.h; sourceTree = "<group>"; };
+		472DC65F1B6A7ACF0052795C /* MyTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +94,7 @@
 		472DC62A1B6929290052795C /* PageController */ = {
 			isa = PBXGroup;
 			children = (
+				472DC65D1B6A7AA10052795C /* controller */,
 				472DC6541B692FA90052795C /* PageController */,
 				472DC62F1B6929290052795C /* AppDelegate.h */,
 				472DC6301B6929290052795C /* AppDelegate.m */,
@@ -137,6 +142,7 @@
 				472DC6581B6932C60052795C /* MenuView */,
 				472DC6551B692FDB0052795C /* PageController.h */,
 				472DC6561B692FDB0052795C /* PageController.m */,
+				472DC65C1B6A76060052795C /* PageConst.h */,
 			);
 			name = PageController;
 			sourceTree = "<group>";
@@ -148,6 +154,15 @@
 				472DC65A1B6932EC0052795C /* MenuView.m */,
 			);
 			name = MenuView;
+			sourceTree = "<group>";
+		};
+		472DC65D1B6A7AA10052795C /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				472DC65E1B6A7ACF0052795C /* MyTableViewController.h */,
+				472DC65F1B6A7ACF0052795C /* MyTableViewController.m */,
+			);
+			name = controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,6 +269,7 @@
 				472DC6341B6929290052795C /* ViewController.m in Sources */,
 				472DC6311B6929290052795C /* AppDelegate.m in Sources */,
 				472DC6531B692A510052795C /* WMMainTableViewController.m in Sources */,
+				472DC6601B6A7ACF0052795C /* MyTableViewController.m in Sources */,
 				472DC62E1B6929290052795C /* main.m in Sources */,
 				472DC65B1B6932EC0052795C /* MenuView.m in Sources */,
 			);
@@ -450,6 +466,7 @@
 				472DC64D1B69292A0052795C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		472DC64E1B69292A0052795C /* Build configuration list for PBXNativeTarget "PageControllerTests" */ = {
 			isa = XCConfigurationList;
@@ -458,6 +475,7 @@
 				472DC6501B69292A0052795C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
